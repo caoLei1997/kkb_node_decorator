@@ -31,10 +31,6 @@ export const check = rule => {
        throw new Error('错误请串参');
       }
       return oldValue.apply(null, arguments);
-      // const p = new Parameter()
-      // // const data = ctx[paramPart]
-      // const errors = p.validate(rule, data)
-      // console.log('error',errors)
     };
     return descriptor;
   };
